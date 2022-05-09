@@ -1,7 +1,7 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
+name: Hackathon Submission
+description: Submit your project for MirrorHack
+title: "[<CATEGORY>]: <PROJECT_NAME> by <TEAM_NAME> "
+labels: ["v1.0", "submission"]
 assignees:
   - octocat
 body:

@@ -1,0 +1,83 @@
+name: MirrorHack Submission
+description: Submit your project for MirrorHack. (Approx. 5-10 minutes)
+title: "[<CATEGORY>]: <PROJECT_NAME> by <TEAM_NAME> "
+labels: ["v1.0", "submission"]
+assignees:
+  - codebender828
+  - zhangryan
+  - hikergit
+  # - Chris Zhu Github
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for participating in the MirrorHack 1.0 hackathon!
+
+        ## ℹ️ Project information
+  # - type: input
+  #   id: project_category
+  #   attributes:
+  #     label: Project Category
+  #     description: How can we get in touch with you if we need more info?
+  #     placeholder: ex. email@example.com
+  #   validations:
+  #     required: false
+  - type: dropdown
+    id: project_theme
+    attributes:
+      label: Project Theme
+      description: What version of our software are you running?
+      options:
+        - "Web 3 Category: Authentication"
+        - "Web 3 Category: Launchpads"
+        - "Web 3 Category: Game Distribution"
+        - "AI Category: Token Price Prediction"
+        - "AI Category: Talking AI with Genetic Breeding"
+        - "Gaming Category: XXX1"
+        - "Gaming Category: XXX2"
+        - "Gaming Category: XXX3"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - 1.0.2 (Default)
+        - 1.0.3 (Edge)
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: sh
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
