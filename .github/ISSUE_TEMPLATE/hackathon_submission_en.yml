@@ -88,37 +88,29 @@ body:
       placeholder: https://github.com/my-team-hack/source-code
     validations:
       required: true
-  - type: dropdown
-    id: version
+  - type: textarea
+    id: pitch
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+      label: 🔥 Your Pitch
+      description: Kindly write a pitch for your project. Please do not use more than 500 words.
     validations:
       required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
   - type: textarea
-    id: logs
+    id: pitch
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: sh
+      label: 🔦 Any other specific thing you want to highlight?
+      description: Kindly write a pitch for your project. Please do not use more than 500 words.
+    validations:
+      required: false
   - type: checkboxes
     id: terms
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      label: Before you submit,
+      description: By submitting this issue, you agree to the following terms
       options:
-        - label: I agree to follow this project's Code of Conduct
+        - label: I have honestly and correctly filled in this submission form.
+          required: true
+        - label: I prepared this project during the duration of this hackathon.
+          required: true
+        - label: I agree to follow this project's [Code of Conduct](https://github.com/mirrorworld-universe/hackathon/CODE_OF_CONDUCT.md)
           required: true
