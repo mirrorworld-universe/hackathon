@@ -12,7 +12,7 @@ The organizing committee holds the right to disqualify any candidate/team on the
 
 ## Safe space for all
 
-Hackathons hosted by MirrorHack Academy are dedicated to providing a safe and comfortable environment for everyone. No discrimination, on the basis of the following, shall be tolerated:
+Hackathons hosted by MirrorHack are dedicated to providing a safe and comfortable environment for everyone. No discrimination, on the basis of the following, shall be tolerated:
 
 - gender
 - gender identity and expression
