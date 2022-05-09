@@ -13,7 +13,6 @@ body:
       value: |
         Thanks for participating in the MirrorHack 1.0 hackathon!
 
-        ## ℹ️ Project information
   - type: dropdown
     id: project_theme
     attributes:
@@ -55,6 +54,14 @@ body:
         1. Member A - @memberA
         2. Member B - @memberB
         3. Member C - @memberC
+    validations:
+      required: true
+  - type: input
+    id: demo_link
+    attributes:
+      label: 🎥 Demo Video Link
+      description: Please provide the link to your demo video. (Your video should not exceed 3 minutes in length)
+      placeholder: ex. My awesome MirrorHack project
     validations:
       required: true
   - type: dropdown
