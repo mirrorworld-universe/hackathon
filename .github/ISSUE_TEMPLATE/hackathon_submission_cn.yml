@@ -1,62 +1,131 @@
-name: Hackathon Submission
-description: Submit your project for MirrorHack
-title: "[<CATEGORY>]: <PROJECT_NAME> by <TEAM_NAME> "
+name: MirrorHack 提交（中文）
+description: 提交您的 MirrorHack 项目。 （约 5-10 分钟）
+title: "[<项目类别>]: <项目名称> by <团队名称> "
 labels: ["v1.0", "submission"]
 assignees:
-  - octocat
+  - codebender828
+  - zhangryan
+  - hikergit
+  # - Chris Zhu Github
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
-  - type: input
-    id: contact
+        感谢您参加 MirrorHack 1.0 黑客马拉松！
+
+  # Project theme
+  - type: dropdown
+    id: project_theme
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: 项目主题
+      description: 您的 hack 属于哪个类别？
+      options:
+        - "Web 3 类别：身份验证"
+        - "Web 3 类别：启动板"
+        - "Web 3 类别：游戏分发"
+        - "AI分类：代币价格预测"
+        - "人工智能类别：用基因育种谈论人工智能"
+        - "游戏类别：XXX1"
+        - "游戏类别：XXX2"
+        - "游戏类别：XXX3"
+    validations:
+      required: true
+
+  # Project name
+  - type: input
+    id: project_name
+    attributes:
+      label: 项目名
+      description: 你的项目名称是什么
+      placeholder: 例如：我很棒的 MirrorHack 项目
+    validations:
+      required: true
+
+  # Project short description
+  - type: input
+    id: project_description
+    attributes:
+      label: 简短的项目描述
+      description: 对您的项目进行简单清晰的描述
+      placeholder: 例如 Web 3 的无密码身份验证
+    validations:
+      required: true
+
+  # Project members
+  - type: textarea
+    id: team_members
+    attributes:
+      label: 🏀 团队成员
+      description: 提及他们的名字并标记他们的 GitHub 句柄
+      value: |
+        1. 成员 A - @memberA
+        2. 成员 B - @memberB
+        3. 成员 C - @memberC
+    validations:
+      required: true
+
+  # Project demo video link
+  - type: input
+    id: demo_link
+    attributes:
+      label: 🎥 演示视频链接
+      description: 请提供指向您的 hack 演示视频的链接。 （您的视频长度不应超过 3 分钟）
+      placeholder: https://youtu.be/dQw4w9WgXcQ
+    validations:
+      required: true
+
+  # Project Live Demo (Not required)
+  - type: input
+    id: live_demo_link
+    attributes:
+      label: ⚡️ 演示网址
+      description: 您的项目是否已经部署？ 请分享现场工作演示的链接💪🏾
+      placeholder: https://youtu.be/dQw4w9WgXcQ
     validations:
       required: false
-  - type: textarea
-    id: what-happened
+
+  # Project presentation url
+  - type: input
+    id: presentation_link
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: 🔖 PPT链接
+      description: 请提供您的 hack PPT 的链接
+      placeholder: https://some.link/with/your/presentation.pdf
     validations:
       required: true
-  - type: dropdown
-    id: version
+
+  # Project theme
+  - type: input
+    id: source_code_link
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+      label: 💻 hack 源代码 (GitHub)
+      description: 请提供指向您的 hack 的 GitHub 存储库的链接。 您的代码库应该是公开的。
+      placeholder: https://github.com/my-team-hack/source-code
     validations:
       required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
   - type: textarea
-    id: logs
+    id: pitch
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: sh
+      label: 🔥 项目推介
+      description: 请为您的项目写一个推介。 请不要使用超过 500 个单词。
+    validations:
+      required: true
+  - type: textarea
+    id: highlights
+    attributes:
+      label: 🔦 您还想强调任何其他具体的事情吗？
+      description: 请为您的项目写一个音调。 请不要使用超过 500 个单词。
+    validations:
+      required: false
   - type: checkboxes
     id: terms
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      label: ☝🏽 提交之前
+      description: 提交此问题，即表示您同意以下条款
       options:
-        - label: I agree to follow this project's Code of Conduct
+        - label: 我已经诚实正确地填写了这份提交表格.
+          required: true
+        - label: 我在这次黑客马拉松期间准备了这个项目.
+          required: true
+        - label: 我同意遵循这个项目的[行为守则](https://github.com/mirrorworld-universe/hackathon/CODE_OF_CONDUCT.md)
           required: true

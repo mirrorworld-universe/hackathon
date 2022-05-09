@@ -1,4 +1,4 @@
-name: MirrorHack Submission
+name: MirrorHack Submission (English)
 description: Submit your project for MirrorHack. (Approx. 5-10 minutes)
 title: "[<CATEGORY>]: <PROJECT_NAME> by <TEAM_NAME> "
 labels: ["v1.0", "submission"]
@@ -18,7 +18,7 @@ body:
     id: project_theme
     attributes:
       label: Project Theme
-      description: What version of our software are you running?
+      description: What category does your hack belong to?
       options:
         - "Web 3 Category: Authentication"
         - "Web 3 Category: Launchpads"
@@ -120,7 +120,7 @@ body:
   - type: checkboxes
     id: terms
     attributes:
-      label: Before you submit,
+      label: ☝🏽 Before you submit
       description: By submitting this issue, you agree to the following terms
       options:
         - label: I have honestly and correctly filled in this submission form.
