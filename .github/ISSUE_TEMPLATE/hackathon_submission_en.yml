@@ -13,6 +13,7 @@ body:
       value: |
         Thanks for participating in the MirrorHack 1.0 hackathon!
 
+  # Project theme
   - type: dropdown
     id: project_theme
     attributes:
@@ -29,6 +30,8 @@ body:
         - "Gaming Category: XXX3"
     validations:
       required: true
+
+  # Project name
   - type: input
     id: project_name
     attributes:
@@ -37,6 +40,8 @@ body:
       placeholder: ex. My awesome MirrorHack project
     validations:
       required: true
+
+  # Project short description
   - type: input
     id: project_description
     attributes:
@@ -45,10 +50,12 @@ body:
       placeholder: ex. Passwordless authentication for Web 3
     validations:
       required: true
+
+  # Project members
   - type: textarea
     id: team_members
     attributes:
-      label: Team Members
+      label: 🏀 Team Members
       description: Mention their Names & tag their GitHub handles
       value: |
         1. Member A - @memberA
@@ -56,6 +63,8 @@ body:
         3. Member C - @memberC
     validations:
       required: true
+
+  # Project demo video link
   - type: input
     id: demo_link
     attributes:
@@ -64,6 +73,18 @@ body:
       placeholder: https://youtu.be/dQw4w9WgXcQ
     validations:
       required: true
+
+  # Project Live Demo (Not required)
+  - type: input
+    id: live_demo_link
+    attributes:
+      label: ⚡️ Live Demo URL
+      description: Is your project already deployed? Please share a link to the live working demo 💪🏾
+      placeholder: https://youtu.be/dQw4w9WgXcQ
+    validations:
+      required: false
+
+  # Project presentation url
   - type: input
     id: presentation_link
     attributes:
@@ -72,14 +93,8 @@ body:
       placeholder: https://some.link/with/your/presentation.pdf
     validations:
       required: true
-  - type: input
-    id: presentation_link
-    attributes:
-      label: 🔖 Presentation Link
-      description: Please provide the link to your hack's presentation
-      placeholder: https://some.link/with/your/presentation.pdf
-    validations:
-      required: true
+
+  # Project theme
   - type: input
     id: source_code_link
     attributes:
@@ -96,7 +111,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: pitch
+    id: highlights
     attributes:
       label: 🔦 Any other specific thing you want to highlight?
       description: Kindly write a pitch for your project. Please do not use more than 500 words.
