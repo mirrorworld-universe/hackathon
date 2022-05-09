@@ -1,4 +1,3 @@
----
 name: Bug Report
 description: File a bug report
 title: "[Bug]: "
@@ -52,7 +51,7 @@ body:
     attributes:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
+      render: sh
   - type: checkboxes
     id: terms
     attributes:
@@ -61,6 +60,3 @@ body:
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
----
-
-Hello Issue
