@@ -60,8 +60,32 @@ body:
     id: demo_link
     attributes:
       label: 🎥 Demo Video Link
-      description: Please provide the link to your demo video. (Your video should not exceed 3 minutes in length)
-      placeholder: ex. My awesome MirrorHack project
+      description: Please provide the link to your hack's demo video. (Your video should not exceed 3 minutes in length)
+      placeholder: https://youtu.be/dQw4w9WgXcQ
+    validations:
+      required: true
+  - type: input
+    id: presentation_link
+    attributes:
+      label: 🔖 Presentation Link
+      description: Please provide the link to your hack's presentation
+      placeholder: https://some.link/with/your/presentation.pdf
+    validations:
+      required: true
+  - type: input
+    id: presentation_link
+    attributes:
+      label: 🔖 Presentation Link
+      description: Please provide the link to your hack's presentation
+      placeholder: https://some.link/with/your/presentation.pdf
+    validations:
+      required: true
+  - type: input
+    id: source_code_link
+    attributes:
+      label: 💻 Hack Source Code (GitHub)
+      description: Please provide the link to your hack's GitHub repository. Your codebase should be public.
+      placeholder: https://github.com/my-team-hack/source-code
     validations:
       required: true
   - type: dropdown
