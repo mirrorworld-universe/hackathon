@@ -14,14 +14,6 @@ body:
         Thanks for participating in the MirrorHack 1.0 hackathon!
 
         ## ℹ️ Project information
-  # - type: input
-  #   id: project_category
-  #   attributes:
-  #     label: Project Category
-  #     description: How can we get in touch with you if we need more info?
-  #     placeholder: ex. email@example.com
-  #   validations:
-  #     required: false
   - type: dropdown
     id: project_theme
     attributes:
@@ -38,12 +30,20 @@ body:
         - "Gaming Category: XXX3"
     validations:
       required: true
-  - type: textarea
-    id: what-happened
+  - type: input
+    id: project_name
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
+      label: Project Name
+      description: What is the name of your project
+      placeholder: ex. My awesome MirrorHack project
+    validations:
+      required: true
+  - type: input
+    id: project_description
+    attributes:
+      label: Short Project Description
+      description: Simple crisp description of your project
+      placeholder: ex. Passwordless authentication for Web 3
       value: "A bug happened!"
     validations:
       required: true
