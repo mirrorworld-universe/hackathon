@@ -44,7 +44,6 @@ body:
       label: Short Project Description
       description: Simple crisp description of your project
       placeholder: ex. Passwordless authentication for Web 3
-      value: "A bug happened!"
     validations:
       required: true
   - type: dropdown
