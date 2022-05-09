@@ -46,6 +46,17 @@ body:
       placeholder: ex. Passwordless authentication for Web 3
     validations:
       required: true
+  - type: textarea
+    id: team_members
+    attributes:
+      label: Team Members
+      description: Mention their Names & tag their GitHub handles
+      value: |
+        1. Member A - @memberA
+        2. Member B - @memberB
+        3. Member C - @memberC
+    validations:
+      required: true
   - type: dropdown
     id: version
     attributes:
