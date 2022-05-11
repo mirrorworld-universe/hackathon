@@ -1,2 +1,2 @@
 # MirrorHack 1.0 Hackathon
-MirrorWorld Hackathon
+<img src="/assets/mirrorhack-poster.jpg" />
