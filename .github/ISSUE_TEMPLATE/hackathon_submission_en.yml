@@ -25,9 +25,10 @@ body:
         - "Web 3 Category: Game Distribution"
         - "AI Category: Token Price Prediction"
         - "AI Category: Talking AI with Genetic Breeding"
-        - "Gaming Category: XXX1"
-        - "Gaming Category: XXX2"
-        - "Gaming Category: XXX3"
+        - "Gaming Category: Frameworks for game physics, motion"
+        - "Gaming Category: Game rendering frameworks"
+        - "Gaming Category: Tooling for game developers, designers and market operators"
+        - "Other"
     validations:
       required: true
 
